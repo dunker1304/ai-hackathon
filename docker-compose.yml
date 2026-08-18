@@ -1,0 +1,17 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: hackathon-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: devsecret
+      POSTGRES_DB: hackathon
+    ports:
+      - "5632:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./backend/scripts/init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
+
+volumes:
+  pgdata:
