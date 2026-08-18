@@ -3,6 +3,14 @@ backend/__pycache__/
 backend/*.pyc
 backend/.venv/
 backend/.env
+.ruff_cache/
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
 
 # Node / Nuxt
 frontend/node_modules/

@@ -19,9 +19,17 @@ dependencies = [
     "numpy>=2.4.6",
 ]
 
+[dependency-groups]
+lint = ["ruff>=0.16.3"]
+dev = [{ include-group = "lint" }]
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["app"]
+
+[tool.uv]
+python-downloads = "manual"
+default-groups = []
