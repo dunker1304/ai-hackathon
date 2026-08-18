@@ -12,8 +12,8 @@ from app.models import Chunk, Document
 
 
 def chunk_text(text: str, chunk_size: int = 800, overlap: int = 150) -> list[str]:
-    """Simple fixed-size chunker with overlap. Good enough for a hackathon;
-    swap for semantic chunking (e.g. via LangChain text splitters) if quality matters."""
+    """Simple fixed-size chunker with overlap. Good enough for a hackathon; swap for
+    semantic chunking (e.g. via LangChain text splitters) if quality matters."""
     chunks = []
     start = 0
     while start < len(text):
@@ -23,7 +23,9 @@ def chunk_text(text: str, chunk_size: int = 800, overlap: int = 150) -> list[str
     return [c for c in chunks if c]
 
 
-def ingest_document(db: Session, title: str, text: str, source: str | None = None) -> tuple[int, int]:
+def ingest_document(
+    db: Session, title: str, text: str, source: str | None = None
+) -> tuple[int, int]:
     doc = Document(title=title, source=source)
     db.add(doc)
     db.flush()  # get doc.id without committing yet

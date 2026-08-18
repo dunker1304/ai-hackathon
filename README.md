@@ -30,7 +30,7 @@ This starts Postgres with the `pgvector` extension already installed, and runs `
 ```bash
 cd backend
 cp .env.example .env      # fill in OPENROUTER_API_KEY, LANGFUSE_* keys
-uv sync
+uv sync  # uv sync --group dev -> for sync dependencies in local dev
 uv run uvicorn app.main:app --reload --port 8000
 ```
 
