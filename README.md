@@ -34,6 +34,46 @@ uv sync  # uv sync --group dev -> for sync dependencies in local dev
 uv run uvicorn app.main:app --reload --port 8000
 ```
 
+#### Danh Sách Các Lệnh Alembic Thường Dùng
+
+1. Khởi Tạo Môi Trường (Initialization)
+
+- `alembic init <directory>`: Khởi tạo thư mục và môi trường Alembic mới (ví dụ: `alembic init alembic`).
+- `alembic init -t async <directory>`: Khởi tạo cấu hình hỗ trợ AsyncIO (SQLAlchemy Async).
+
+---
+
+2. Tạo Migration Script
+
+- `alembic revision -m "<message>"`: Tạo một file migration rỗng thủ công.
+- `alembic revision --autogenerate -m "<message>"`: Tự động so sánh SQLAlchemy Models với Database để sinh ra file migration tương ứng.
+
+---
+
+3. Nâng Cấp & Hạ Cấp (Apply & Rollback)
+
+- `alembic upgrade head`: Áp dụng toàn bộ các migration mới nhất vào database.
+- `alembic upgrade +1`: Tiến lên 1 phiên bản migration tiếp theo.
+- `alembic upgrade <revision_id>`: Nâng cấp database đến một phiên bản revision cụ thể.
+- `alembic downgrade -1`: Rollback về 1 phiên bản migration phía trước.
+- `alembic downgrade base`: Rollback toàn bộ migration về trạng thái ban đầu (database trống).
+
+---
+
+4. Kiểm Tra Trạng Thái & Lịch Sử (Status & History)
+
+- `alembic current`: Hiển thị revision_id hiện tại của database.
+- `alembic history`: Xem danh sách tất cả các file migration đã tạo.
+- `alembic history --verbose`: Xem chi tiết lịch sử migration (bao gồm ID, file gốc, thời gian tạo, mô tả).
+- `alembic heads`: Hiển thị phiên bản revision mới nhất hiện có trong mã nguồn.
+
+---
+
+5. Xuất SQL Offline (Offline SQL Generation)
+
+- `alembic upgrade head --sql`: Xuất toàn bộ câu lệnh SQL nâng cấp lên phiên bản mới nhất ra màn hình thay vì thực thi trực tiếp vào DB.
+- `alembic upgrade <start_rev>:<end_rev> --sql`: Xuất script SQL từ phiên bản `<start_rev>` đến `<end_rev>`.
+
 API docs at `http://localhost:8000/docs`.
 
 ### 3. Frontend

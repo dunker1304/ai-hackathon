@@ -8,12 +8,13 @@ dependencies = [
     "uvicorn[standard]>=0.32",
     "pydantic-settings>=2.6",
     "sqlalchemy>=2.0",
-    "psycopg[binary]>=3.2",
     "pgvector>=0.3.6",
     "langchain>=0.3",
     "langchain-openai>=0.2",
     "langfuse>=4.0",
     "openai>=1.54",
+    "alembic>=1.19.1",
+    "asyncpg>=0.31.0",
 ]
 
 [dependency-groups]

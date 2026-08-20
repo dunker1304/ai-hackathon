@@ -1,7 +1,7 @@
 line-length = 119
 preview = true
 fix = true
-unsafe-fixes = true
+unsafe-fixes = false
 show-fixes = true
 cache-dir = ".ruff_cache"
 
@@ -134,6 +134,9 @@ ignore = [
     "raise-vanilla-args",
     "raise-within-try",
 ]
+extend-safe-fixes = [
+    "TC", # type-checking
+]
 
 exclude = [
     "frontend",
@@ -143,6 +146,7 @@ exclude = [
     "**/.mypy_cache",
     "**/.pytest_cache",
     "**/.ruff_cache",
+    "**/alembic/versions",
 ]
 
 [lint.per-file-ignores]

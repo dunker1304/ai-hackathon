@@ -11,7 +11,7 @@ from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langfuse import Langfuse
 from langfuse.langchain import CallbackHandler
 
-from app.config import settings
+from core.config import settings
 
 
 @lru_cache

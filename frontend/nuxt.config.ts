@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2026-01-01",
   devtools: { enabled: true },
-  modules: ['@nuxt/ui'],
+  modules: ['@nuxt/ui', '@vueuse/nuxt'],
   css: ['~/assets/css/main.css'],
   runtimeConfig: {
     public: {
