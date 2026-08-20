@@ -9,6 +9,8 @@ class Settings(BaseSettings):
     database_port: int
     database_user: str
     database_password: str
+    database_echo: bool = False
+    database_pool_echo: bool = False
 
     openrouter_api_key: str
     openrouter_base_url: str = "https://openrouter.ai/api/v1"

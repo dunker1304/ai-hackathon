@@ -14,7 +14,8 @@
                 "--reload",
                 "--port",
                 "8000"
-            ]
+            ],
+            "envFile": "${workspaceFolder}/backend/.env"
         }
     ]
 }
