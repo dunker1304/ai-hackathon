@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.config import settings
 from app.routers import chat, documents
+from core.config import settings
 
 app = FastAPI(title="Hackathon AI Boilerplate")
 

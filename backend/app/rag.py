@@ -7,8 +7,8 @@ Swap the chunker or add a reranker here without touching the routers.
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
+from app.catalog.model import Chunk, Document
 from app.llm import get_embeddings
-from app.models import Chunk, Document
 
 
 def chunk_text(text: str, chunk_size: int = 800, overlap: int = 150) -> list[str]:
@@ -23,9 +23,7 @@ def chunk_text(text: str, chunk_size: int = 800, overlap: int = 150) -> list[str
     return [c for c in chunks if c]
 
 
-def ingest_document(
-    db: Session, title: str, text: str, source: str | None = None
-) -> tuple[int, int]:
+def ingest_document(db: Session, title: str, text: str, source: str | None = None) -> tuple[int, int]:
     doc = Document(title=title, source=source)
     db.add(doc)
     db.flush()  # get doc.id without committing yet
@@ -45,9 +43,5 @@ def retrieve(db: Session, question: str, top_k: int = 5) -> list[Chunk]:
     embedder = get_embeddings()
     query_vector = embedder.embed_query(question)
 
-    stmt = (
-        select(Chunk)
-        .order_by(Chunk.embedding.cosine_distance(query_vector))
-        .limit(top_k)
-    )
+    stmt = select(Chunk).order_by(Chunk.embedding.cosine_distance(query_vector)).limit(top_k)
     return list(db.scalars(stmt))
