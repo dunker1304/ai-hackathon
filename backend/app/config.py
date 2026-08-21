@@ -19,5 +19,9 @@ class Settings(BaseSettings):
 
     cors_origins: str = "http://localhost:3000"
 
+    # ScraperAPI (Amazon crawl — scripts/crawl_amazon.py). Optional: the app
+    # itself never calls it; only the offline crawl script does.
+    scraperapi_key: str | None = None
+
 
 settings = Settings()

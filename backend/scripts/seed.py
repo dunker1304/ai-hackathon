@@ -1,8 +1,9 @@
 """Seed the Product Opportunity Hub tables from backend/data/ artifacts.
 
 Idempotent: truncates hub tables and reloads. The ADAPTERS dict is the
-swap-in seam for real BTC data — drop a real Alura/Helium10 export in
-backend/data/ with the same column names and re-run.
+swap-in seam for real BTC data — drop a file in backend/data/ with the same
+column names and re-run. Amazon data comes from scripts/crawl_amazon.py
+(ScraperAPI); Etsy still expects the Alura export column layout.
 
 Run from backend/:  uv run python scripts/seed.py
 """
@@ -44,7 +45,10 @@ ADAPTERS = {
             "url": "URL",
         },
     },
-    "helium10_amazon": {
+    # Produced by scripts/crawl_amazon.py (ScraperAPI structured Amazon
+    # search). Same column layout as the old Helium10 export; "Sales" is the
+    # "N+ bought in past month" badge, 0 when Amazon shows none.
+    "scraperapi_amazon": {
         "file": "listings_amazon.csv",
         "source": "amazon",
         "columns": {
