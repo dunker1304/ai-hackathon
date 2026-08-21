@@ -15,7 +15,89 @@
                 "--port",
                 "8000"
             ],
+            "cwd": "${workspaceFolder}/backend",
             "envFile": "${workspaceFolder}/backend/.env"
+        },
+        {
+            "name": "Camoufox: fetch URL",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/backend/scripts/test_camoufox.py",
+            "args": [
+                "fetch",
+                "https://www.amazon.com/s?k=amazon+personalized+sweatshirts&crid=3MBCW6E9FQKYQ&sprefix=amazon+personalize%2Caps%2C433&ref=nb_sb_ss_p13n-expert-pd-ops-ranker_1_18",
+                "--title",
+                "--save",
+                "result/test_camoufox.html"
+            ],
+            "cwd": "${workspaceFolder}/backend",
+            "envFile": "${workspaceFolder}/backend/.env",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Camoufox: fetch URL (prompt)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/backend/scripts/test_camoufox.py",
+            "args": [
+                "fetch",
+                "${input:crawlUrl}",
+                "--title",
+                "--save",
+                "result/test_camoufox.html"
+            ],
+            "cwd": "${workspaceFolder}/backend",
+            "envFile": "${workspaceFolder}/backend/.env",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Camoufox: smoke",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/backend/scripts/test_camoufox.py",
+            "args": [
+                "smoke"
+            ],
+            "cwd": "${workspaceFolder}/backend",
+            "envFile": "${workspaceFolder}/backend/.env",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Camoufox: fingerprint",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/backend/scripts/test_camoufox.py",
+            "args": [
+                "fingerprint"
+            ],
+            "cwd": "${workspaceFolder}/backend",
+            "envFile": "${workspaceFolder}/backend/.env",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Camoufox: config",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/backend/scripts/test_camoufox.py",
+            "args": [
+                "config"
+            ],
+            "cwd": "${workspaceFolder}/backend",
+            "envFile": "${workspaceFolder}/backend/.env",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ],
+    "inputs": [
+        {
+            "id": "crawlUrl",
+            "type": "promptString",
+            "description": "URL to fetch with Camoufox",
+            "default": "https://www.amazon.com/s?k=coffee+mug"
         }
     ]
 }

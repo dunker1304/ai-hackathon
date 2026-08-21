@@ -17,11 +17,18 @@ dependencies = [
     "alembic>=1.19.1",
     "pandas>=3.0.5",
     "numpy>=2.4.6",
+    "httpx>=0.28",
+    "selectolax>=0.3.21",
+    "camoufox[geoip]>=0.4.11",
 ]
 
 [dependency-groups]
 lint = ["ruff>=0.16.3"]
-dev = [{ include-group = "lint" }]
+dev = [
+    { include-group = "lint" },
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+]
 
 [build-system]
 requires = ["hatchling"]
@@ -33,3 +40,7 @@ packages = ["app"]
 [tool.uv]
 python-downloads = "manual"
 default-groups = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

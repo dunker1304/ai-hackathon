@@ -147,6 +147,8 @@ exclude = [
 
 [lint.per-file-ignores]
 "**/model/*.py" = ["typing-only-standard-library-import"]
+# Playwright's own API takes an explicit `timeout` (ms); mirroring it is intentional.
+"app/crawler/core/client/browser/*.py" = ["async-function-with-timeout"]
 
 [lint.flake8-pytest-style]
 parametrize-names-type = "list"

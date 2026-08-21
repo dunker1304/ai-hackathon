@@ -16,6 +16,7 @@ from __future__ import annotations
 import csv
 import json
 import sys
+
 from pathlib import Path
 
 import numpy as np
@@ -175,7 +176,7 @@ def llm_aliases(taxonomy: list[dict]) -> dict[str, list[str]]:
                 if item.product_type_id in {r["id"] for r in batch}:
                     result[item.product_type_id] = item.aliases[:20]
             print(f"  aliases batch {i // batch_size + 1}: ok")
-        except Exception as exc:  # noqa: BLE001 - fallback keeps generation running
+        except Exception as exc:
             print(f"  aliases batch {i // batch_size + 1} failed ({exc}); using templates")
     return result
 
@@ -270,8 +271,7 @@ def gen_keywords(taxonomy: list[dict], popularity: dict, rng: np.random.Generato
             f"{noun} gift",
             f"engraved {noun}",
         ]
-        for kw in seeds:
-            rows.append({
+        rows.extend({
                 "keyword": kw,
                 "source": rng.choice(["alura_etsy", "helium10_amazon"]),
                 "volume": int(rng.lognormal(np.log(max(pop * 2500, 50)), 0.7)),
@@ -279,7 +279,7 @@ def gen_keywords(taxonomy: list[dict], popularity: dict, rng: np.random.Generato
                 "cpc": round(float(rng.uniform(0.2, 1.8)), 2),
                 "trend_30d": round(float(rng.normal(8 if pop > 1 else -2, 15)), 1),
                 "product_type_id": row["id"],
-            })
+            } for kw in seeds)
     return rows
 
 
@@ -326,8 +326,7 @@ def gen_eval_set(taxonomy: list[dict], aliases: dict[str, list[str]], rng: np.ra
             + JUNK_SUFFIX[int(rng.integers(len(JUNK_SUFFIX)))]
         ).strip()
         cases.append({"title": title, "expected": row["id"]})
-    for title in OUT_OF_CATALOG_TITLES:
-        cases.append({"title": title, "expected": None})
+    cases.extend({"title": title, "expected": None} for title in OUT_OF_CATALOG_TITLES)
     return cases
 
 
@@ -372,8 +371,7 @@ def main() -> None:
 
     eval_set = gen_eval_set(taxonomy, aliases, rng)
     with open(DATA_DIR / "eval_listings.jsonl", "w") as f:
-        for case in eval_set:
-            f.write(json.dumps(case) + "\n")
+        f.writelines(json.dumps(case) + "\n" for case in eval_set)
     print(f"eval_listings.jsonl: {len(eval_set)} cases")
 
 
