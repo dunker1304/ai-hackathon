@@ -12,6 +12,32 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
       - ./backend/scripts/init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d hackathon"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # Celery broker + result backend for the crawl workers.
+  redis:
+    image: redis:7-alpine
+    container_name: hackathon-redis
+    restart: unless-stopped
+    ports:
+      - "6479:6379"
+    # Crawl payloads are re-derivable from Postgres, so persistence is off:
+    # an AOF rewrite pausing the broker mid-crawl costs more than a lost queue.
+    command: >
+      redis-server
+      --save ""
+      --appendonly no
+      --maxmemory 256mb
+      --maxmemory-policy noeviction
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
 
 volumes:
   pgdata:

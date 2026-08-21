@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
-from app.routers import chat, documents, hub
+from app.routers import chat, crawl, documents, hub
 
 app = FastAPI(title="Product Opportunity Hub")
 
@@ -17,6 +17,7 @@ app.add_middleware(
 app.include_router(documents.router)
 app.include_router(chat.router)
 app.include_router(hub.router)
+app.include_router(crawl.router)
 
 
 @app.get("/health")
