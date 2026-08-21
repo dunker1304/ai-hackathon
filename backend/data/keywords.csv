@@ -1,0 +1,211 @@
+keyword,source,volume,competition,cpc,trend_30d,product_type_id
+personalized ornament,helium10_amazon,22659,0.584,1.54,28.9,acrylic-ornament
+custom acrylic ornament,helium10_amazon,10125,0.854,1.28,23.5,acrylic-ornament
+custom shape acrylic ornament,helium10_amazon,6076,0.433,0.75,8.9,acrylic-ornament
+ornament gift,alura_etsy,5857,0.562,0.81,28.1,acrylic-ornament
+engraved ornament,alura_etsy,4330,0.924,1.38,30.2,acrylic-ornament
+personalized ornament,helium10_amazon,904,0.409,1.59,-22.3,wood-ornament
+custom wood ornament,helium10_amazon,865,0.373,1.38,-15.3,wood-ornament
+engraved wood ornament,alura_etsy,436,0.253,0.24,5.4,wood-ornament
+ornament gift,alura_etsy,1104,0.685,1.41,2.8,wood-ornament
+engraved ornament,alura_etsy,4082,0.289,1.71,-9.0,wood-ornament
+personalized ornament,helium10_amazon,1273,0.553,1.43,5.2,metal-ornament
+custom metal ornament,helium10_amazon,5418,0.571,1.32,12.3,metal-ornament
+stamped metal ornament,alura_etsy,1489,0.752,0.53,-9.1,metal-ornament
+ornament gift,alura_etsy,5248,0.612,1.55,16.4,metal-ornament
+engraved ornament,alura_etsy,4916,0.485,0.23,9.0,metal-ornament
+personalized ornament,helium10_amazon,3725,0.51,0.35,20.5,ceramic-ornament
+custom ceramic ornament,alura_etsy,1055,0.681,1.02,-6.1,ceramic-ornament
+ceramic photo ornament,helium10_amazon,2588,0.459,1.09,-4.0,ceramic-ornament
+ornament gift,helium10_amazon,6879,0.868,1.22,16.7,ceramic-ornament
+engraved ornament,alura_etsy,2864,0.537,1.22,17.3,ceramic-ornament
+personalized suncatcher,alura_etsy,671,0.418,1.28,-8.1,acrylic-suncatcher
+custom acrylic suncatcher,alura_etsy,328,0.533,0.95,2.9,acrylic-suncatcher
+acrylic suncatcher,helium10_amazon,1104,0.073,1.25,-20.8,acrylic-suncatcher
+suncatcher gift,helium10_amazon,690,0.349,0.79,3.1,acrylic-suncatcher
+engraved suncatcher,alura_etsy,446,0.355,0.84,15.7,acrylic-suncatcher
+personalized 20oz,alura_etsy,707,0.537,1.2,17.4,stainless-tumbler
+custom metal 20oz,alura_etsy,553,0.221,0.41,-13.9,stainless-tumbler
+stainless steel tumbler 20oz,alura_etsy,2357,0.255,0.31,6.7,stainless-tumbler
+20oz gift,helium10_amazon,1471,0.544,0.61,-3.0,stainless-tumbler
+engraved 20oz,helium10_amazon,3606,0.639,0.31,14.6,stainless-tumbler
+personalized 11oz,alura_etsy,1190,0.455,1.35,18.8,ceramic-mug
+custom ceramic 11oz,helium10_amazon,2648,0.687,0.68,19.3,ceramic-mug
+ceramic mug 11oz,helium10_amazon,4044,0.553,0.6,29.4,ceramic-mug
+11oz gift,alura_etsy,2019,0.514,0.9,6.0,ceramic-mug
+engraved 11oz,helium10_amazon,1465,0.335,0.34,-3.2,ceramic-mug
+personalized glass,helium10_amazon,3989,0.386,1.38,-19.0,glass-can
+custom glass glass,helium10_amazon,2088,0.549,0.99,-10.1,glass-can
+beer can glass,alura_etsy,3891,0.175,1.33,-22.1,glass-can
+glass gift,alura_etsy,4279,0.561,0.56,-8.7,glass-can
+engraved glass,alura_etsy,3206,0.531,0.65,-35.0,glass-can
+personalized board,helium10_amazon,6463,0.473,1.22,5.5,wood-cutting-board
+custom wood board,alura_etsy,6856,0.486,0.43,3.7,wood-cutting-board
+engraved cutting board,alura_etsy,2467,0.184,1.5,15.6,wood-cutting-board
+board gift,helium10_amazon,5038,0.591,1.21,0.2,wood-cutting-board
+engraved board,alura_etsy,4526,0.672,1.5,-12.2,wood-cutting-board
+personalized doormat,alura_etsy,1001,0.259,0.73,5.0,coir-doormat
+custom fabric doormat,helium10_amazon,1501,0.454,1.59,-9.2,coir-doormat
+custom coir doormat,alura_etsy,1028,0.408,1.55,-15.9,coir-doormat
+doormat gift,helium10_amazon,2650,0.44,0.71,-3.8,coir-doormat
+engraved doormat,alura_etsy,1264,0.475,0.63,-11.4,coir-doormat
+personalized blanket,helium10_amazon,3324,0.678,1.57,-3.6,fleece-blanket
+custom fabric blanket,helium10_amazon,1501,0.691,0.23,-12.2,fleece-blanket
+personalized fleece blanket,alura_etsy,2573,0.483,1.36,18.4,fleece-blanket
+blanket gift,helium10_amazon,2860,0.554,1.78,9.8,fleece-blanket
+engraved blanket,alura_etsy,4733,0.652,1.66,-7.1,fleece-blanket
+personalized blanket,helium10_amazon,3492,0.436,1.02,35.4,sherpa-blanket
+custom fabric blanket,alura_etsy,4404,0.723,0.45,-16.6,sherpa-blanket
+sherpa photo blanket,helium10_amazon,14928,0.513,1.58,-16.0,sherpa-blanket
+blanket gift,helium10_amazon,1537,0.739,0.88,16.5,sherpa-blanket
+engraved blanket,helium10_amazon,7677,0.498,1.24,12.7,sherpa-blanket
+personalized print,helium10_amazon,1250,0.509,0.72,22.0,canvas-print
+custom canvas print,helium10_amazon,3025,0.525,0.58,-8.9,canvas-print
+custom canvas print,helium10_amazon,4223,0.314,0.6,4.1,canvas-print
+print gift,helium10_amazon,1294,0.427,1.12,-9.8,canvas-print
+engraved print,helium10_amazon,3774,0.533,1.36,15.3,canvas-print
+personalized poster,helium10_amazon,2918,0.703,1.11,0.8,paper-poster
+custom paper poster,alura_etsy,5556,0.328,1.12,7.7,paper-poster
+custom art poster,helium10_amazon,4017,0.765,0.36,-8.8,paper-poster
+poster gift,alura_etsy,18652,0.576,0.6,5.8,paper-poster
+engraved poster,helium10_amazon,11248,0.555,0.54,-0.9,paper-poster
+personalized sign,alura_etsy,6318,0.51,0.22,-20.6,metal-sign
+custom metal sign,helium10_amazon,2837,0.625,0.24,18.5,metal-sign
+custom metal sign,alura_etsy,3159,0.699,1.32,3.9,metal-sign
+sign gift,helium10_amazon,3134,0.507,0.51,-14.1,metal-sign
+engraved sign,alura_etsy,3811,0.578,1.0,0.3,metal-sign
+personalized sign,alura_etsy,533,0.429,1.03,11.1,wood-sign
+custom wood sign,helium10_amazon,703,0.17,0.36,-8.2,wood-sign
+personalized wood sign,alura_etsy,1158,0.71,0.75,3.0,wood-sign
+sign gift,alura_etsy,1469,0.317,0.78,13.4,wood-sign
+engraved sign,helium10_amazon,1161,0.616,1.74,18.9,wood-sign
+personalized sign,helium10_amazon,6537,0.369,1.08,40.7,neon-sign
+custom acrylic sign,alura_etsy,1570,0.419,0.76,-4.7,neon-sign
+custom neon led sign,alura_etsy,2100,0.529,0.47,-7.1,neon-sign
+sign gift,helium10_amazon,1931,0.647,1.4,26.8,neon-sign
+engraved sign,helium10_amazon,7720,0.762,1.17,24.2,neon-sign
+personalized light,helium10_amazon,1359,0.347,1.02,4.6,acrylic-night-light
+custom acrylic light,helium10_amazon,2517,0.17,0.38,-0.6,acrylic-night-light
+3d acrylic night light,alura_etsy,3489,0.05,1.66,-24.9,acrylic-night-light
+light gift,alura_etsy,2314,0.317,1.8,-4.4,acrylic-night-light
+engraved light,helium10_amazon,4827,0.125,1.44,21.5,acrylic-night-light
+personalized frame,helium10_amazon,19465,0.453,0.35,26.1,wood-photo-frame
+custom wood frame,helium10_amazon,4934,0.329,0.38,-27.2,wood-photo-frame
+engraved photo frame,helium10_amazon,7036,0.564,1.43,28.4,wood-photo-frame
+frame gift,helium10_amazon,6218,0.469,1.23,38.7,wood-photo-frame
+engraved frame,alura_etsy,3842,0.545,1.47,1.7,wood-photo-frame
+personalized keychain,alura_etsy,1681,0.444,0.73,9.9,acrylic-keychain
+custom acrylic keychain,alura_etsy,4413,0.447,0.24,1.8,acrylic-keychain
+custom acrylic keychain,alura_etsy,548,0.05,1.64,-14.8,acrylic-keychain
+keychain gift,alura_etsy,1351,0.585,0.66,9.6,acrylic-keychain
+engraved keychain,helium10_amazon,3298,0.308,0.69,6.8,acrylic-keychain
+personalized keychain,helium10_amazon,2246,0.555,1.06,14.3,metal-keychain
+custom metal keychain,alura_etsy,3202,0.437,0.94,-21.4,metal-keychain
+engraved metal keychain,helium10_amazon,1337,0.49,0.4,-16.7,metal-keychain
+keychain gift,helium10_amazon,21807,0.337,1.25,-2.0,metal-keychain
+engraved keychain,helium10_amazon,1238,0.596,1.68,-28.5,metal-keychain
+personalized keychain,helium10_amazon,661,0.625,1.74,-32.1,leather-keychain
+custom leather keychain,helium10_amazon,362,0.404,0.51,11.4,leather-keychain
+personalized leather keychain,helium10_amazon,2137,0.555,1.74,-4.9,leather-keychain
+keychain gift,helium10_amazon,704,0.55,0.52,-0.4,leather-keychain
+engraved keychain,helium10_amazon,3507,0.213,1.35,-19.7,leather-keychain
+personalized stone,alura_etsy,17518,0.973,1.05,40.7,garden-stone
+custom stone stone,alura_etsy,48477,0.893,0.96,3.5,garden-stone
+memorial garden stone,alura_etsy,20887,0.691,1.74,23.7,garden-stone
+stone gift,alura_etsy,14108,0.856,1.17,12.1,garden-stone
+engraved stone,alura_etsy,4145,0.972,0.25,49.3,garden-stone
+personalized chime,helium10_amazon,2065,0.484,1.05,7.8,wind-chime
+custom metal chime,helium10_amazon,2093,0.563,0.43,9.9,wind-chime
+memorial wind chime,helium10_amazon,2364,0.499,1.34,-5.4,wind-chime
+chime gift,helium10_amazon,1833,0.315,0.74,-3.6,wind-chime
+engraved chime,alura_etsy,2539,0.591,0.99,-0.7,wind-chime
+personalized flag,helium10_amazon,1186,0.501,1.15,-29.9,garden-flag
+custom fabric flag,alura_etsy,2147,0.595,0.24,18.8,garden-flag
+custom garden flag,helium10_amazon,6123,0.508,0.39,2.5,garden-flag
+flag gift,helium10_amazon,681,0.326,1.69,13.0,garden-flag
+engraved flag,alura_etsy,6275,0.368,1.48,4.5,garden-flag
+personalized tag,helium10_amazon,743,0.409,0.77,-15.8,pet-tag
+custom metal tag,helium10_amazon,840,0.286,1.37,12.1,pet-tag
+engraved pet id tag,helium10_amazon,1024,0.616,1.07,-0.1,pet-tag
+tag gift,helium10_amazon,608,0.456,0.47,15.1,pet-tag
+engraved tag,helium10_amazon,963,0.303,1.74,19.2,pet-tag
+personalized bandana,alura_etsy,1612,0.456,0.93,14.0,pet-bandana
+custom fabric bandana,helium10_amazon,1797,0.649,1.04,23.1,pet-bandana
+custom pet bandana,alura_etsy,1117,0.697,1.1,-14.0,pet-bandana
+bandana gift,alura_etsy,3320,0.539,0.82,15.0,pet-bandana
+engraved bandana,helium10_amazon,4656,0.705,1.0,7.3,pet-bandana
+personalized bowl,helium10_amazon,5874,0.567,0.9,6.6,pet-bowl
+custom ceramic bowl,alura_etsy,2220,0.403,1.7,-35.2,pet-bowl
+personalized ceramic pet bowl,helium10_amazon,2577,0.503,0.94,28.7,pet-bowl
+bowl gift,helium10_amazon,6343,0.547,0.38,16.1,pet-bowl
+engraved bowl,helium10_amazon,1216,0.642,1.18,-18.6,pet-bowl
+personalized t-shirt,alura_etsy,25406,0.875,0.57,3.6,tshirt
+custom fabric t-shirt,helium10_amazon,9262,0.98,1.01,1.8,tshirt
+custom printed t-shirt,helium10_amazon,17475,0.915,0.28,12.0,tshirt
+t-shirt gift,helium10_amazon,9418,0.518,1.04,16.6,tshirt
+engraved t-shirt,alura_etsy,10206,0.896,1.34,-1.5,tshirt
+personalized hoodie,alura_etsy,6441,0.27,1.02,8.4,hoodie
+custom fabric hoodie,helium10_amazon,1854,0.37,1.35,-0.5,hoodie
+custom hoodie,helium10_amazon,4219,0.221,0.23,17.2,hoodie
+hoodie gift,alura_etsy,3719,0.265,0.69,4.7,hoodie
+engraved hoodie,helium10_amazon,3600,0.467,0.21,3.4,hoodie
+personalized bag,alura_etsy,6697,0.98,1.37,10.4,tote-bag
+custom canvas bag,alura_etsy,49345,0.98,0.32,11.7,tote-bag
+canvas tote bag,helium10_amazon,7379,0.867,0.88,13.8,tote-bag
+bag gift,alura_etsy,24088,0.98,0.83,10.9,tote-bag
+engraved bag,alura_etsy,67285,0.843,1.47,1.8,tote-bag
+personalized pillow,alura_etsy,1329,0.387,1.14,-39.2,throw-pillow
+custom fabric pillow,helium10_amazon,2646,0.285,1.47,10.4,throw-pillow
+custom throw pillow,alura_etsy,1111,0.484,0.47,-23.6,throw-pillow
+pillow gift,helium10_amazon,2330,0.704,1.06,-8.2,throw-pillow
+engraved pillow,helium10_amazon,1468,0.726,1.49,6.8,throw-pillow
+personalized plaque,alura_etsy,3537,0.586,1.4,-8.1,wood-plaque
+custom wood plaque,alura_etsy,1227,0.157,1.62,-0.8,wood-plaque
+engraved wood plaque,helium10_amazon,459,0.447,1.62,3.9,wood-plaque
+plaque gift,helium10_amazon,829,0.476,1.64,11.0,wood-plaque
+engraved plaque,alura_etsy,3712,0.643,1.62,4.1,wood-plaque
+personalized plaque,helium10_amazon,2256,0.248,1.68,0.8,crystal-plaque
+custom glass plaque,helium10_amazon,564,0.648,1.24,-2.5,crystal-plaque
+crystal award plaque,alura_etsy,3058,0.705,0.34,15.5,crystal-plaque
+plaque gift,alura_etsy,900,0.199,0.66,6.5,crystal-plaque
+engraved plaque,alura_etsy,1512,0.661,1.33,-4.0,crystal-plaque
+personalized plaque,alura_etsy,9217,0.703,0.48,18.6,acrylic-plaque
+custom acrylic plaque,alura_etsy,6010,0.365,0.57,7.2,acrylic-plaque
+acrylic award plaque,alura_etsy,4967,0.494,0.35,-23.7,acrylic-plaque
+plaque gift,alura_etsy,6857,0.414,1.42,-0.4,acrylic-plaque
+engraved plaque,helium10_amazon,2119,0.667,1.03,17.5,acrylic-plaque
+personalized charm,alura_etsy,10567,0.644,1.15,8.2,car-charm
+custom acrylic charm,helium10_amazon,10977,0.74,1.76,11.9,car-charm
+acrylic car hanging charm,alura_etsy,1707,0.807,1.11,0.7,car-charm
+charm gift,helium10_amazon,6013,0.557,1.77,20.9,car-charm
+engraved charm,alura_etsy,4302,0.347,1.19,-7.4,car-charm
+personalized necklace,alura_etsy,1110,0.242,1.74,-4.2,bar-necklace
+custom metal necklace,alura_etsy,2310,0.299,0.42,-23.3,bar-necklace
+engraved bar necklace,alura_etsy,4080,0.386,0.86,-31.7,bar-necklace
+necklace gift,helium10_amazon,540,0.49,1.53,-5.6,bar-necklace
+engraved necklace,helium10_amazon,830,0.339,1.07,5.0,bar-necklace
+personalized bracelet,alura_etsy,848,0.242,0.79,-0.0,bead-bracelet
+custom metal bracelet,alura_etsy,1810,0.381,0.62,-4.6,bead-bracelet
+custom bead bracelet,helium10_amazon,718,0.263,0.7,-1.5,bead-bracelet
+bracelet gift,helium10_amazon,2473,0.404,0.95,22.2,bead-bracelet
+engraved bracelet,helium10_amazon,1314,0.201,0.98,18.3,bead-bracelet
+personalized card,alura_etsy,1031,0.333,0.78,2.9,wallet-card
+custom metal card,alura_etsy,2335,0.5,0.6,12.1,wallet-card
+engraved wallet insert card,alura_etsy,4615,0.286,1.38,-10.6,wallet-card
+card gift,alura_etsy,821,0.373,1.62,-0.1,wallet-card
+engraved card,helium10_amazon,1452,0.238,1.36,8.8,wallet-card
+personalized puzzle,helium10_amazon,4190,0.421,1.25,-5.3,photo-puzzle
+custom paper puzzle,helium10_amazon,3782,0.913,1.59,-32.0,photo-puzzle
+custom photo puzzle,alura_etsy,2692,0.261,1.77,-11.5,photo-puzzle
+puzzle gift,alura_etsy,1996,0.663,0.61,24.1,photo-puzzle
+engraved puzzle,helium10_amazon,4327,0.658,1.24,31.9,photo-puzzle
+personalized pad,helium10_amazon,2624,0.624,1.21,5.0,mouse-pad
+custom fabric pad,helium10_amazon,4845,0.644,0.94,2.7,mouse-pad
+custom mouse pad,helium10_amazon,5390,0.362,1.56,33.5,mouse-pad
+pad gift,helium10_amazon,3974,0.758,0.54,-3.9,mouse-pad
+engraved pad,helium10_amazon,3278,0.526,1.06,-8.7,mouse-pad
+personalized plate,alura_etsy,4372,0.531,1.69,3.4,desk-nameplate
+custom wood plate,alura_etsy,4724,0.636,0.4,19.0,desk-nameplate
+wood desk name plate,alura_etsy,2174,0.05,1.04,4.5,desk-nameplate
+plate gift,helium10_amazon,1343,0.418,1.01,9.4,desk-nameplate
+engraved plate,alura_etsy,779,0.241,0.48,5.2,desk-nameplate

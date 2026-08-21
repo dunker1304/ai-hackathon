@@ -1,19 +1,27 @@
-# Hackathon AI Boilerplate
+# Product Opportunity Hub
 
-RAG-ready full-stack starter: **FastAPI (uv) + LangChain + OpenRouter + Langfuse + pgvector + Nuxt 3**.
+AI Product Research Copilot for POD (print-on-demand) R&D teams — built for the Printway hackathon challenge (PW1).
 
-Clone this, add your API keys, and you have a working chat-over-your-documents app in under 10 minutes.
+Aggregates marketplace signals (Etsy via Alura exports, Amazon via Helium10 exports, Google Trends) into a single explainable **Opportunity Score** with an actionable recommendation: what to make, which material, when to launch.
 
 ## Stack
 
 | Layer | Tool |
 |---|---|
-| Frontend | Nuxt 3 |
-| Backend | FastAPI, served via `uv` |
+| Frontend | Nuxt 4 + Nuxt UI + Tailwind 4 |
+| Backend | FastAPI (uv), SQLAlchemy 2, Alembic |
 | LLM gateway | OpenRouter (one key, many models) |
-| Orchestration | LangChain |
+| Orchestration | LangChain (tool-calling Ask layer) |
 | Observability | Langfuse |
-| Vector store | PostgreSQL + pgvector (HNSW index) |
+| Vector store | PostgreSQL + pgvector (HNSW alias index) |
+
+## Core capabilities
+
+1. **Trend Aggregation** — signals from ≥2 independent sources (Etsy + Amazon exports, Google-Trends-shaped weekly series), every number carries `source` + `fetched_at`.
+2. **Product Type Normalization** — 4-stage pipeline (LLM signature extraction → multi-vector alias retrieval → constrained LLM choice → keyword rule override) maps any listing title to the Printway taxonomy. Honest `out_of_catalog` below the confidence threshold. Eval: **top-1 93% · top-3 100% · OOC 100%** (`scripts/eval_normalization.py`).
+3. **Opportunity Score** — 6 explainable dimensions (Demand 22%, Competition 20%, Growth 20%, Seasonality 12%, Personalization 13%, Revenue 13%), percentile-normalized within category cohorts. **Manufacturing Fit is a gate, not a dimension**: fit < 50 blocks recommendation regardless of market score. Weight sliders recompute totals client-side, instantly.
+4. **Ask copilot** — no text RAG: the LLM routes intent to 7 deterministic SQL/pandas tools (`rank_opportunities`, `explain_score`, `normalize_listing`, `compare_niches`, `seasonality_window`, `design_insights`, `generate_report`) and narrates the results. Every answer ends with a **→ Recommendation** block.
+5. **Auto Research Report** — fixed Markdown template (LLM writes connective text only), downloadable per product type.
 
 ## Quick start
 
@@ -21,43 +29,62 @@ Clone this, add your API keys, and you have a working chat-over-your-documents a
 
 ```bash
 docker compose up -d db
+cd backend
+uv sync
+uv run alembic upgrade head        # schema migrations (Alembic)
 ```
 
-This starts Postgres with the `pgvector` extension already installed, and runs `scripts/init_db.sql` to create the schema + HNSW index.
+### 2. Seed data
 
-### 2. Backend
+```bash
+uv run python scripts/seed.py      # loads backend/data/* into Postgres + computes scores
+```
+
+Mock data is committed in `backend/data/` (generated once by `scripts/generate_mock_data.py`).
+**Swap in real BTC data**: drop real Alura/Helium10 exports with the same column names into
+`backend/data/` and re-run `seed.py` — the `ADAPTERS` dict in `scripts/seed.py` is the only seam.
+
+> Alias embeddings need a valid `OPENAI_API_KEY`. Without one, seeding still works and
+> normalization falls back to lexical matching (already at 93% top-1 on the eval set).
+> Fix the key and re-run `seed.py` to enable vector retrieval.
+
+### 3. Backend
 
 ```bash
 cd backend
-cp .env.example .env      # fill in OPENROUTER_API_KEY, LANGFUSE_* keys
-uv sync
+cp .env.example .env               # OPENROUTER_API_KEY (needs credits), OPENAI_API_KEY, LANGFUSE_*
 uv run uvicorn app.main:app --reload --port 8000
 ```
 
 API docs at `http://localhost:8000/docs`.
 
-### 3. Frontend
+### 4. Frontend
 
 ```bash
 cd frontend
-cp .env.example .env      # set NUXT_PUBLIC_API_BASE if backend isn't on :8000
-npm install
-npm run dev
+cp .env.example .env               # NUXT_PUBLIC_API_BASE if backend isn't on :8000
+pnpm install
+pnpm dev
 ```
 
-App at `http://localhost:3000`.
+App at `http://localhost:3000` — four screens: **Discover** (ranked table + weight sliders + evidence popovers), **Analyze** (paste a title → normalization + score), **Compare** (niche side-by-side), **Ask** (copilot chat with tool chips).
 
-## What's wired up already
+## Verification
 
-- **`POST /documents`** — ingest raw text: chunks it, embeds it, stores in `chunks` table.
-- **`POST /chat`** — RAG endpoint: embeds the question, retrieves top-k chunks via pgvector cosine distance, streams an answer from the LLM through LangChain, traced in Langfuse.
-- **Model routing** — swap models by changing one string in `.env` (`OPENROUTER_MODEL`), no code changes. Any OpenRouter-supported model works (Claude, GPT, Gemini, open-weights).
-- **Tracing** — every LLM call and retrieval step shows up in your Langfuse dashboard automatically via the LangChain callback handler.
-- **Frontend chat UI** — minimal streaming chat page in Nuxt 3, already wired to the backend.
+```bash
+cd backend
+uv run python scripts/eval_normalization.py    # top-1/top-3/OOC accuracy
+curl localhost:8000/opportunities | head       # ranked scores with evidence
+curl -X POST localhost:8000/normalize -H 'Content-Type: application/json' \
+  -d '{"title":"Personalized Grandpa Gift For Father'\''s Day From Granddaughter"}'
+```
 
-## Extending during the hackathon
+## Data compliance
 
-- Swap `text-embedding-3-small` for another embedding model in `app/rag.py` — just make sure the `vector()` column dimension in `scripts/init_db.sql` matches.
-- Add a reranker (Cohere Rerank / BGE) between retrieval and generation in `app/rag.py` if answer quality is the bottleneck.
-- Add more routers under `app/routers/` following the pattern in `chat.py`.
-- If you don't need RAG at all, just call `app/llm.py`'s `get_llm()` directly — the gateway + tracing still works.
+Only operator-assisted exports (Alura/Helium10 accounts provided by the organizers) and public
+Google Trends data. No scraping, no paid credentials in the repo.
+
+## Legacy boilerplate endpoints
+
+`POST /documents` (RAG ingest) and `POST /chat` (RAG chat) from the original starter remain
+functional but unused by the hub.

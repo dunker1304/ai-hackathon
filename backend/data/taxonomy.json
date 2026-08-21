@@ -1,0 +1,1178 @@
+[
+  {
+    "id": "acrylic-ornament",
+    "name": "Custom Shape Acrylic Ornament",
+    "category": "Ornaments",
+    "material": "acrylic",
+    "difficulty": 2,
+    "margin_min": 0.45,
+    "margin_max": 0.65,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        2.29,
+        1.474,
+        1.09,
+        1.009,
+        1.0,
+        1.0,
+        1.0,
+        1.009,
+        1.09,
+        1.474,
+        2.29,
+        2.8
+      ],
+      "peak_month": 12,
+      "peak_label": "Christmas"
+    }
+  },
+  {
+    "id": "wood-ornament",
+    "name": "Engraved Wood Ornament",
+    "category": "Ornaments",
+    "material": "wood",
+    "difficulty": 2,
+    "margin_min": 0.4,
+    "margin_max": 0.6,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        2.29,
+        1.474,
+        1.09,
+        1.009,
+        1.0,
+        1.0,
+        1.0,
+        1.009,
+        1.09,
+        1.474,
+        2.29,
+        2.8
+      ],
+      "peak_month": 12,
+      "peak_label": "Christmas"
+    }
+  },
+  {
+    "id": "metal-ornament",
+    "name": "Stamped Metal Ornament",
+    "category": "Ornaments",
+    "material": "metal",
+    "difficulty": 3,
+    "margin_min": 0.35,
+    "margin_max": 0.55,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        2.218,
+        1.448,
+        1.085,
+        1.008,
+        1.0,
+        1.0,
+        1.0,
+        1.008,
+        1.085,
+        1.448,
+        2.218,
+        2.7
+      ],
+      "peak_month": 12,
+      "peak_label": "Christmas"
+    }
+  },
+  {
+    "id": "ceramic-ornament",
+    "name": "Ceramic Photo Ornament",
+    "category": "Ornaments",
+    "material": "ceramic",
+    "difficulty": 3,
+    "margin_min": 0.35,
+    "margin_max": 0.55,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        2.29,
+        1.474,
+        1.09,
+        1.009,
+        1.0,
+        1.0,
+        1.0,
+        1.009,
+        1.09,
+        1.474,
+        2.29,
+        2.8
+      ],
+      "peak_month": 12,
+      "peak_label": "Christmas"
+    }
+  },
+  {
+    "id": "acrylic-suncatcher",
+    "name": "Acrylic Suncatcher",
+    "category": "Home Decor",
+    "material": "acrylic",
+    "difficulty": 2,
+    "margin_min": 0.45,
+    "margin_max": 0.65,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.005,
+        1.05,
+        1.264,
+        1.717,
+        2.0,
+        1.717,
+        1.264,
+        1.05,
+        1.005,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "peak_month": 5,
+      "peak_label": "Mother's Day"
+    }
+  },
+  {
+    "id": "stainless-tumbler",
+    "name": "Stainless Steel Tumbler 20oz",
+    "category": "Drinkware",
+    "material": "metal",
+    "difficulty": 2,
+    "margin_min": 0.35,
+    "margin_max": 0.55,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.0,
+        1.004,
+        1.04,
+        1.211,
+        1.573,
+        1.8,
+        1.573,
+        1.211,
+        1.04,
+        1.004,
+        1.0,
+        1.0
+      ],
+      "peak_month": 6,
+      "peak_label": "Father's Day"
+    }
+  },
+  {
+    "id": "ceramic-mug",
+    "name": "Ceramic Mug 11oz",
+    "category": "Drinkware",
+    "material": "ceramic",
+    "difficulty": 1,
+    "margin_min": 0.4,
+    "margin_max": 0.6,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.717,
+        1.264,
+        1.05,
+        1.005,
+        1.0,
+        1.0,
+        1.0,
+        1.005,
+        1.05,
+        1.264,
+        1.717,
+        2.0
+      ],
+      "peak_month": 12,
+      "peak_label": "Christmas"
+    }
+  },
+  {
+    "id": "glass-can",
+    "name": "Beer Can Glass",
+    "category": "Drinkware",
+    "material": "glass",
+    "difficulty": 1,
+    "margin_min": 0.4,
+    "margin_max": 0.6,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.0,
+        1.003,
+        1.035,
+        1.185,
+        1.502,
+        1.7,
+        1.502,
+        1.185,
+        1.035,
+        1.003,
+        1.0,
+        1.0
+      ],
+      "peak_month": 6,
+      "peak_label": "Father's Day"
+    }
+  },
+  {
+    "id": "wood-cutting-board",
+    "name": "Engraved Cutting Board",
+    "category": "Kitchen",
+    "material": "wood",
+    "difficulty": 2,
+    "margin_min": 0.35,
+    "margin_max": 0.55,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.86,
+        1.316,
+        1.06,
+        1.006,
+        1.0,
+        1.0,
+        1.0,
+        1.006,
+        1.06,
+        1.316,
+        1.86,
+        2.2
+      ],
+      "peak_month": 12,
+      "peak_label": "Christmas"
+    }
+  },
+  {
+    "id": "coir-doormat",
+    "name": "Custom Coir Doormat",
+    "category": "Home Decor",
+    "material": "fabric",
+    "difficulty": 2,
+    "margin_min": 0.3,
+    "margin_max": 0.5,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.237,
+        1.045,
+        1.004,
+        1.0,
+        1.0,
+        1.0,
+        1.004,
+        1.045,
+        1.237,
+        1.645,
+        1.9,
+        1.645
+      ],
+      "peak_month": 11,
+      "peak_label": "Holiday hosting"
+    }
+  },
+  {
+    "id": "fleece-blanket",
+    "name": "Personalized Fleece Blanket",
+    "category": "Home Decor",
+    "material": "fabric",
+    "difficulty": 1,
+    "margin_min": 0.35,
+    "margin_max": 0.55,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        2.003,
+        1.369,
+        1.07,
+        1.007,
+        1.0,
+        1.0,
+        1.0,
+        1.007,
+        1.07,
+        1.369,
+        2.003,
+        2.4
+      ],
+      "peak_month": 12,
+      "peak_label": "Christmas"
+    }
+  },
+  {
+    "id": "sherpa-blanket",
+    "name": "Sherpa Photo Blanket",
+    "category": "Home Decor",
+    "material": "fabric",
+    "difficulty": 2,
+    "margin_min": 0.3,
+    "margin_max": 0.5,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        2.075,
+        1.395,
+        1.075,
+        1.007,
+        1.0,
+        1.0,
+        1.0,
+        1.007,
+        1.075,
+        1.395,
+        2.075,
+        2.5
+      ],
+      "peak_month": 12,
+      "peak_label": "Christmas"
+    }
+  },
+  {
+    "id": "canvas-print",
+    "name": "Custom Canvas Print",
+    "category": "Wall Art",
+    "material": "canvas",
+    "difficulty": 1,
+    "margin_min": 0.45,
+    "margin_max": 0.7,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.788,
+        1.29,
+        1.055,
+        1.005,
+        1.0,
+        1.0,
+        1.0,
+        1.005,
+        1.055,
+        1.29,
+        1.788,
+        2.1
+      ],
+      "peak_month": 12,
+      "peak_label": "Christmas"
+    }
+  },
+  {
+    "id": "paper-poster",
+    "name": "Custom Art Poster",
+    "category": "Wall Art",
+    "material": "paper",
+    "difficulty": 1,
+    "margin_min": 0.5,
+    "margin_max": 0.7,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.573,
+        1.211,
+        1.04,
+        1.004,
+        1.0,
+        1.0,
+        1.0,
+        1.004,
+        1.04,
+        1.211,
+        1.573,
+        1.8
+      ],
+      "peak_month": 12,
+      "peak_label": "Christmas"
+    }
+  },
+  {
+    "id": "metal-sign",
+    "name": "Custom Metal Sign",
+    "category": "Wall Art",
+    "material": "metal",
+    "difficulty": 3,
+    "margin_min": 0.3,
+    "margin_max": 0.5,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.0,
+        1.004,
+        1.04,
+        1.211,
+        1.573,
+        1.8,
+        1.573,
+        1.211,
+        1.04,
+        1.004,
+        1.0,
+        1.0
+      ],
+      "peak_month": 6,
+      "peak_label": "Patio season"
+    }
+  },
+  {
+    "id": "wood-sign",
+    "name": "Personalized Wood Sign",
+    "category": "Wall Art",
+    "material": "wood",
+    "difficulty": 2,
+    "margin_min": 0.35,
+    "margin_max": 0.55,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.004,
+        1.045,
+        1.237,
+        1.645,
+        1.9,
+        1.645,
+        1.237,
+        1.045,
+        1.004,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "peak_month": 5,
+      "peak_label": "Wedding season"
+    }
+  },
+  {
+    "id": "neon-sign",
+    "name": "Custom Neon LED Sign",
+    "category": "Lighting",
+    "material": "acrylic",
+    "difficulty": 4,
+    "margin_min": 0.25,
+    "margin_max": 0.45,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.004,
+        1.04,
+        1.211,
+        1.573,
+        1.8,
+        1.573,
+        1.211,
+        1.04,
+        1.004,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "peak_month": 5,
+      "peak_label": "Wedding season"
+    }
+  },
+  {
+    "id": "acrylic-night-light",
+    "name": "3D Acrylic Night Light",
+    "category": "Lighting",
+    "material": "acrylic",
+    "difficulty": 3,
+    "margin_min": 0.4,
+    "margin_max": 0.6,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.86,
+        1.316,
+        1.06,
+        1.006,
+        1.0,
+        1.0,
+        1.0,
+        1.006,
+        1.06,
+        1.316,
+        1.86,
+        2.2
+      ],
+      "peak_month": 12,
+      "peak_label": "Christmas"
+    }
+  },
+  {
+    "id": "wood-photo-frame",
+    "name": "Engraved Photo Frame",
+    "category": "Keepsakes",
+    "material": "wood",
+    "difficulty": 2,
+    "margin_min": 0.35,
+    "margin_max": 0.55,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.005,
+        1.05,
+        1.264,
+        1.717,
+        2.0,
+        1.717,
+        1.264,
+        1.05,
+        1.005,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "peak_month": 5,
+      "peak_label": "Mother's Day"
+    }
+  },
+  {
+    "id": "acrylic-keychain",
+    "name": "Custom Acrylic Keychain",
+    "category": "Accessories",
+    "material": "acrylic",
+    "difficulty": 1,
+    "margin_min": 0.5,
+    "margin_max": 0.7,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.502,
+        1.185,
+        1.035,
+        1.003,
+        1.0,
+        1.0,
+        1.0,
+        1.003,
+        1.035,
+        1.185,
+        1.502,
+        1.7
+      ],
+      "peak_month": 12,
+      "peak_label": "Christmas"
+    }
+  },
+  {
+    "id": "metal-keychain",
+    "name": "Engraved Metal Keychain",
+    "category": "Accessories",
+    "material": "metal",
+    "difficulty": 1,
+    "margin_min": 0.45,
+    "margin_max": 0.65,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.0,
+        1.004,
+        1.04,
+        1.211,
+        1.573,
+        1.8,
+        1.573,
+        1.211,
+        1.04,
+        1.004,
+        1.0,
+        1.0
+      ],
+      "peak_month": 6,
+      "peak_label": "Father's Day"
+    }
+  },
+  {
+    "id": "leather-keychain",
+    "name": "Personalized Leather Keychain",
+    "category": "Accessories",
+    "material": "leather",
+    "difficulty": 2,
+    "margin_min": 0.4,
+    "margin_max": 0.6,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.0,
+        1.004,
+        1.04,
+        1.211,
+        1.573,
+        1.8,
+        1.573,
+        1.211,
+        1.04,
+        1.004,
+        1.0,
+        1.0
+      ],
+      "peak_month": 6,
+      "peak_label": "Father's Day"
+    }
+  },
+  {
+    "id": "garden-stone",
+    "name": "Memorial Garden Stone",
+    "category": "Garden & Outdoor",
+    "material": "stone",
+    "difficulty": 3,
+    "margin_min": 0.3,
+    "margin_max": 0.5,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.005,
+        1.055,
+        1.29,
+        1.788,
+        2.1,
+        1.788,
+        1.29,
+        1.055,
+        1.005,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "peak_month": 5,
+      "peak_label": "Spring"
+    }
+  },
+  {
+    "id": "wind-chime",
+    "name": "Memorial Wind Chime",
+    "category": "Garden & Outdoor",
+    "material": "metal",
+    "difficulty": 3,
+    "margin_min": 0.3,
+    "margin_max": 0.5,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.005,
+        1.05,
+        1.264,
+        1.717,
+        2.0,
+        1.717,
+        1.264,
+        1.05,
+        1.005,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "peak_month": 5,
+      "peak_label": "Spring"
+    }
+  },
+  {
+    "id": "garden-flag",
+    "name": "Custom Garden Flag",
+    "category": "Garden & Outdoor",
+    "material": "fabric",
+    "difficulty": 1,
+    "margin_min": 0.4,
+    "margin_max": 0.6,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.06,
+        1.316,
+        1.86,
+        2.2,
+        1.86,
+        1.316,
+        1.06,
+        1.006,
+        1.0,
+        1.0,
+        1.0,
+        1.006
+      ],
+      "peak_month": 4,
+      "peak_label": "Spring"
+    }
+  },
+  {
+    "id": "pet-tag",
+    "name": "Engraved Pet ID Tag",
+    "category": "Pet",
+    "material": "metal",
+    "difficulty": 1,
+    "margin_min": 0.5,
+    "margin_max": 0.7,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.0,
+        1.0,
+        1.0,
+        1.002,
+        1.02,
+        1.105,
+        1.287,
+        1.4,
+        1.287,
+        1.105,
+        1.02,
+        1.002
+      ],
+      "peak_month": 8,
+      "peak_label": "Adoption season"
+    }
+  },
+  {
+    "id": "pet-bandana",
+    "name": "Custom Pet Bandana",
+    "category": "Pet",
+    "material": "fabric",
+    "difficulty": 1,
+    "margin_min": 0.45,
+    "margin_max": 0.65,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.0,
+        1.0,
+        1.003,
+        1.03,
+        1.158,
+        1.43,
+        1.6,
+        1.43,
+        1.158,
+        1.03,
+        1.003,
+        1.0
+      ],
+      "peak_month": 7,
+      "peak_label": "Summer"
+    }
+  },
+  {
+    "id": "pet-bowl",
+    "name": "Personalized Ceramic Pet Bowl",
+    "category": "Pet",
+    "material": "ceramic",
+    "difficulty": 2,
+    "margin_min": 0.35,
+    "margin_max": 0.55,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.573,
+        1.211,
+        1.04,
+        1.004,
+        1.0,
+        1.0,
+        1.0,
+        1.004,
+        1.04,
+        1.211,
+        1.573,
+        1.8
+      ],
+      "peak_month": 12,
+      "peak_label": "Christmas"
+    }
+  },
+  {
+    "id": "tshirt",
+    "name": "Custom Printed T-Shirt",
+    "category": "Apparel",
+    "material": "fabric",
+    "difficulty": 1,
+    "margin_min": 0.3,
+    "margin_max": 0.5,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.0,
+        1.003,
+        1.03,
+        1.158,
+        1.43,
+        1.6,
+        1.43,
+        1.158,
+        1.03,
+        1.003,
+        1.0,
+        1.0
+      ],
+      "peak_month": 6,
+      "peak_label": "Summer"
+    }
+  },
+  {
+    "id": "hoodie",
+    "name": "Custom Hoodie",
+    "category": "Apparel",
+    "material": "fabric",
+    "difficulty": 1,
+    "margin_min": 0.25,
+    "margin_max": 0.45,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.264,
+        1.05,
+        1.005,
+        1.0,
+        1.0,
+        1.0,
+        1.005,
+        1.05,
+        1.264,
+        1.717,
+        2.0,
+        1.717
+      ],
+      "peak_month": 11,
+      "peak_label": "Winter"
+    }
+  },
+  {
+    "id": "tote-bag",
+    "name": "Canvas Tote Bag",
+    "category": "Accessories",
+    "material": "canvas",
+    "difficulty": 1,
+    "margin_min": 0.4,
+    "margin_max": 0.6,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.0,
+        1.0,
+        1.0,
+        1.003,
+        1.03,
+        1.158,
+        1.43,
+        1.6,
+        1.43,
+        1.158,
+        1.03,
+        1.003
+      ],
+      "peak_month": 8,
+      "peak_label": "Back to school"
+    }
+  },
+  {
+    "id": "throw-pillow",
+    "name": "Custom Throw Pillow",
+    "category": "Home Decor",
+    "material": "fabric",
+    "difficulty": 1,
+    "margin_min": 0.4,
+    "margin_max": 0.6,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.717,
+        1.264,
+        1.05,
+        1.005,
+        1.0,
+        1.0,
+        1.0,
+        1.005,
+        1.05,
+        1.264,
+        1.717,
+        2.0
+      ],
+      "peak_month": 12,
+      "peak_label": "Christmas"
+    }
+  },
+  {
+    "id": "wood-plaque",
+    "name": "Engraved Wood Plaque",
+    "category": "Keepsakes",
+    "material": "wood",
+    "difficulty": 2,
+    "margin_min": 0.35,
+    "margin_max": 0.55,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.0,
+        1.005,
+        1.055,
+        1.29,
+        1.788,
+        2.1,
+        1.788,
+        1.29,
+        1.055,
+        1.005,
+        1.0,
+        1.0
+      ],
+      "peak_month": 6,
+      "peak_label": "Graduation"
+    }
+  },
+  {
+    "id": "crystal-plaque",
+    "name": "Crystal Award Plaque",
+    "category": "Keepsakes",
+    "material": "glass",
+    "difficulty": 4,
+    "margin_min": 0.25,
+    "margin_max": 0.45,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.0,
+        1.005,
+        1.05,
+        1.264,
+        1.717,
+        2.0,
+        1.717,
+        1.264,
+        1.05,
+        1.005,
+        1.0,
+        1.0
+      ],
+      "peak_month": 6,
+      "peak_label": "Graduation"
+    }
+  },
+  {
+    "id": "acrylic-plaque",
+    "name": "Acrylic Award Plaque",
+    "category": "Keepsakes",
+    "material": "acrylic",
+    "difficulty": 3,
+    "margin_min": 0.35,
+    "margin_max": 0.55,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.0,
+        1.005,
+        1.05,
+        1.264,
+        1.717,
+        2.0,
+        1.717,
+        1.264,
+        1.05,
+        1.005,
+        1.0,
+        1.0
+      ],
+      "peak_month": 6,
+      "peak_label": "Graduation"
+    }
+  },
+  {
+    "id": "car-charm",
+    "name": "Acrylic Car Hanging Charm",
+    "category": "Accessories",
+    "material": "acrylic",
+    "difficulty": 1,
+    "margin_min": 0.5,
+    "margin_max": 0.7,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.573,
+        1.211,
+        1.04,
+        1.004,
+        1.0,
+        1.0,
+        1.0,
+        1.004,
+        1.04,
+        1.211,
+        1.573,
+        1.8
+      ],
+      "peak_month": 12,
+      "peak_label": "Christmas"
+    }
+  },
+  {
+    "id": "bar-necklace",
+    "name": "Engraved Bar Necklace",
+    "category": "Jewelry",
+    "material": "metal",
+    "difficulty": 3,
+    "margin_min": 0.35,
+    "margin_max": 0.55,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.005,
+        1.055,
+        1.29,
+        1.788,
+        2.1,
+        1.788,
+        1.29,
+        1.055,
+        1.005,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "peak_month": 5,
+      "peak_label": "Mother's Day"
+    }
+  },
+  {
+    "id": "bead-bracelet",
+    "name": "Custom Bead Bracelet",
+    "category": "Jewelry",
+    "material": "metal",
+    "difficulty": 3,
+    "margin_min": 0.35,
+    "margin_max": 0.55,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.86,
+        2.2,
+        1.86,
+        1.316,
+        1.06,
+        1.006,
+        1.0,
+        1.0,
+        1.0,
+        1.006,
+        1.06,
+        1.316
+      ],
+      "peak_month": 2,
+      "peak_label": "Valentine's Day"
+    }
+  },
+  {
+    "id": "wallet-card",
+    "name": "Engraved Wallet Insert Card",
+    "category": "Keepsakes",
+    "material": "metal",
+    "difficulty": 1,
+    "margin_min": 0.5,
+    "margin_max": 0.7,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.0,
+        1.006,
+        1.065,
+        1.343,
+        1.931,
+        2.3,
+        1.931,
+        1.343,
+        1.065,
+        1.006,
+        1.0,
+        1.0
+      ],
+      "peak_month": 6,
+      "peak_label": "Father's Day"
+    }
+  },
+  {
+    "id": "photo-puzzle",
+    "name": "Custom Photo Puzzle",
+    "category": "Toys & Games",
+    "material": "paper",
+    "difficulty": 2,
+    "margin_min": 0.4,
+    "margin_max": 0.6,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        2.003,
+        1.369,
+        1.07,
+        1.007,
+        1.0,
+        1.0,
+        1.0,
+        1.007,
+        1.07,
+        1.369,
+        2.003,
+        2.4
+      ],
+      "peak_month": 12,
+      "peak_label": "Christmas"
+    }
+  },
+  {
+    "id": "mouse-pad",
+    "name": "Custom Mouse Pad",
+    "category": "Office",
+    "material": "fabric",
+    "difficulty": 1,
+    "margin_min": 0.45,
+    "margin_max": 0.65,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.0,
+        1.0,
+        1.0,
+        1.003,
+        1.035,
+        1.185,
+        1.502,
+        1.7,
+        1.502,
+        1.185,
+        1.035,
+        1.003
+      ],
+      "peak_month": 8,
+      "peak_label": "Back to school"
+    }
+  },
+  {
+    "id": "desk-nameplate",
+    "name": "Wood Desk Name Plate",
+    "category": "Office",
+    "material": "wood",
+    "difficulty": 2,
+    "margin_min": 0.4,
+    "margin_max": 0.6,
+    "personalization_friendly": true,
+    "seasonality": {
+      "monthly": [
+        1.0,
+        1.0,
+        1.0,
+        1.003,
+        1.03,
+        1.158,
+        1.43,
+        1.6,
+        1.43,
+        1.158,
+        1.03,
+        1.003
+      ],
+      "peak_month": 8,
+      "peak_label": "Back to school"
+    }
+  }
+]

@@ -2,9 +2,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
-from app.routers import chat, documents
+from app.routers import chat, documents, hub
 
-app = FastAPI(title="Hackathon AI Boilerplate")
+app = FastAPI(title="Product Opportunity Hub")
 
 app.add_middleware(
     CORSMiddleware,
@@ -16,6 +16,7 @@ app.add_middleware(
 
 app.include_router(documents.router)
 app.include_router(chat.router)
+app.include_router(hub.router)
 
 
 @app.get("/health")
