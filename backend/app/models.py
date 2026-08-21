@@ -79,9 +79,7 @@ class Listing(Base):
     shop: Mapped[str] = mapped_column(Text)
     tags: Mapped[list] = mapped_column(JSONB, default=list)
     fetched_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
-    product_type_id: Mapped[str | None] = mapped_column(
-        ForeignKey("taxonomy.id"), nullable=True
-    )
+    product_type_id: Mapped[str | None] = mapped_column(ForeignKey("taxonomy.id"), nullable=True)
     norm_confidence: Mapped[float | None] = mapped_column(Float, nullable=True)
 
 
@@ -95,9 +93,7 @@ class Keyword(Base):
     competition: Mapped[float] = mapped_column(Float)  # 0-1
     cpc: Mapped[float] = mapped_column(Float)
     trend_30d: Mapped[float] = mapped_column(Float)  # % change over 30 days
-    product_type_id: Mapped[str | None] = mapped_column(
-        ForeignKey("taxonomy.id"), nullable=True
-    )
+    product_type_id: Mapped[str | None] = mapped_column(ForeignKey("taxonomy.id"), nullable=True)
     fetched_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
 
 
@@ -120,13 +116,10 @@ class Score(Base):
 
     __tablename__ = "scores"
 
-    product_type_id: Mapped[str] = mapped_column(
-        ForeignKey("taxonomy.id", ondelete="CASCADE"), primary_key=True
-    )
-    computed_at: Mapped[datetime] = mapped_column(
-        DateTime(timezone=True), server_default=func.now()
-    )
+    product_type_id: Mapped[str] = mapped_column(ForeignKey("taxonomy.id", ondelete="CASCADE"), primary_key=True)
+    computed_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
     dims: Mapped[dict] = mapped_column(JSONB)
     total: Mapped[float] = mapped_column(Float)  # at DEFAULT_WEIGHTS
     fit: Mapped[int] = mapped_column(Integer)
     decision: Mapped[str] = mapped_column(Text)  # recommend | conditional | not_recommend
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())

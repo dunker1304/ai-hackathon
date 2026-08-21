@@ -1,3 +1,6 @@
+from collections.abc import Iterable
+from typing import Annotated, Any
+
 from fastapi import APIRouter, Depends
 from fastapi.responses import StreamingResponse
 from langchain_core.messages import HumanMessage, SystemMessage
@@ -18,9 +21,13 @@ SYSTEM_PROMPT = (
 
 
 @router.post("")
-def chat(payload: ChatRequest, db: Session = Depends(get_db)) -> StreamingResponse:
+def chat(
+    payload: ChatRequest, db: Annotated[Session, Depends(get_db)]
+) -> StreamingResponse:
     chunks = retrieve(db, payload.question, top_k=payload.top_k)
-    context = "\n\n---\n\n".join(c.content for c in chunks) or "No relevant context found."
+    context = (
+        "\n\n---\n\n".join(c.content for c in chunks) or "No relevant context found."
+    )
 
     messages = [
         SystemMessage(content=SYSTEM_PROMPT.format(context=context)),
@@ -31,7 +38,7 @@ def chat(payload: ChatRequest, db: Session = Depends(get_db)) -> StreamingRespon
     handler = get_langfuse_handler()
     config = {"callbacks": [handler]} if handler else {}
 
-    def token_stream():
+    def token_stream() -> Iterable[str | list[Any]]:
         for event in llm.stream(messages, config=config):
             if event.content:
                 yield event.content

@@ -53,6 +53,7 @@ Mock data is committed in `backend/data/` (generated once by `scripts/generate_m
 ```bash
 cd backend
 cp .env.example .env               # OPENROUTER_API_KEY (needs credits), OPENAI_API_KEY, LANGFUSE_*
+uv sync  # uv sync --group dev -> for sync dependencies in local dev
 uv run uvicorn app.main:app --reload --port 8000
 ```
 

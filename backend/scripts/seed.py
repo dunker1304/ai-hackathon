@@ -13,7 +13,8 @@ from __future__ import annotations
 import csv
 import json
 import sys
-from datetime import datetime, timedelta, timezone
+
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -103,7 +104,7 @@ def load_aliases(db) -> None:
                 db.add(TaxonomyAlias(product_type_id=pt, alias=alias, embedding=vec))
             db.commit()
             print(f"  embedded {min(i + EMBED_BATCH_SIZE, len(pairs))}/{len(pairs)} aliases")
-    except Exception as exc:  # noqa: BLE001 - keep seeding usable without API keys
+    except Exception as exc:
         db.rollback()
         print(f"  WARNING: embeddings unavailable ({str(exc)[:80]}...)")
         print("  Aliases NOT embedded — normalization will use the lexical fallback.")
@@ -173,7 +174,7 @@ def load_trends(db) -> None:
                 entity=row["entity"],
                 entity_type=row["entity_type"],
                 source="google_trends",
-                date=datetime.fromisoformat(row["date"]).replace(tzinfo=timezone.utc),
+                date=datetime.fromisoformat(row["date"]).replace(tzinfo=UTC),
                 value=float(row["value"]),
             )
         )
@@ -182,7 +183,7 @@ def load_trends(db) -> None:
 
 
 def main() -> None:
-    now = datetime.now(timezone.utc)
+    now = datetime.now(UTC)
     db = SessionLocal()
     try:
         print("truncating hub tables...")

@@ -1,0 +1,24 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "never",
+            "source.fixAll": "never",
+            "source.organizeImports.ruff": "explicit",
+            "source.fixAll.ruff": "explicit"
+        }
+    },
+    "python.languageServer": "Pylance",
+    "python-envs.pythonProjects": [
+        {
+            "path": "backend",
+            "envManager": "astral-sh.uv:uv-venv",
+            "packageManager": "astral-sh.uv:uv-pip"
+        }
+    ],
+    "python.defaultInterpreterPath": "${workspaceFolder}/backend/.venv/bin/python",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/backend"
+    ],
+}

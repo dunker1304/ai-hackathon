@@ -1,10 +1,25 @@
-"""Make the backend root importable so tests can import app/ and scripts/."""
-
-from __future__ import annotations
-
-import sys
 from pathlib import Path
 
-BACKEND_ROOT = Path(__file__).resolve().parents[1]
-if str(BACKEND_ROOT) not in sys.path:
-    sys.path.insert(0, str(BACKEND_ROOT))
+import pytest
+
+FIXTURES = Path(__file__).parent / "fixtures"
+
+
+@pytest.fixture(scope="session")
+def amazon_serp_html() -> str:
+    """A real Amazon SERP captured with scripts/test_camoufox.py.
+
+    Keyword: "amazon personalized sweatshirts", 48 organic results, page 1 of 3.
+    """
+    return (FIXTURES / "amazon_search_page1.html").read_text(encoding="utf-8")
+
+
+@pytest.fixture(scope="session")
+def amazon_detail_html() -> str:
+    """A real Amazon /dp page (B0721C21RJ, Hanes EcoSmart sweatshirt).
+
+    Captured from a VN IP *before* the delivery-location fix, so it prices in
+    VND. That is deliberate: it exercises the currency-mismatch path that the
+    live crawler must never hit silently.
+    """
+    return (FIXTURES / "amazon_product_detail.html").read_text(encoding="utf-8")
