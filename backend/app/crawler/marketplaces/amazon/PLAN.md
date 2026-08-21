@@ -209,7 +209,7 @@ not organic demand and would inflate the metrics.
 
 ## Tests
 
-Offline (`uv run pytest -q`, 153 tests, ~1 s):
+Offline (`uv run --group dev pytest -q`, 206 tests, ~1 s):
 
 * `tests/test_amazon_url.py` — URL builder, filters, unsupported-filter errors.
 * `tests/test_amazon_search_parser.py` — SERP parser against the real fixture

@@ -1,7 +1,7 @@
 # Live Amazon crawl — how to run it
 
 Two scripts, run from `backend/`. Both hit Amazon for real: no mocks, no
-fixtures. For the offline tests run `uv run pytest -q` instead.
+fixtures. For the offline tests run `uv run --group dev pytest -q` instead.
 
 | Script | Phase | Input | Output |
 | --- | --- | --- | --- |
@@ -361,4 +361,4 @@ instead, so the two cases are distinguishable.
   the reasoning behind every workaround. Read this before changing a parser.
 * `scripts/test_camoufox.py` — lower-level browser harness (`fetch`, `smoke`,
   `fingerprint`, `bench`) for debugging a single page.
-* `uv run pytest -q` — 108 offline tests over saved fixtures.
+* `uv run --group dev pytest -q` — 206 offline tests over saved fixtures.
